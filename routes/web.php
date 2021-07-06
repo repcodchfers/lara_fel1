@@ -24,5 +24,6 @@ Route::get('/empleado', function () {
     return view('empleado.index');
 });
 Route::get('/empleado/create',[EmpleadoController::class,'create']);*/
-Route::resource('empleado',EmpleadoController::class);
+Route::resource('empleados',EmpleadoController::class);
+//para probar agregue una s de empleado a empleados
 
